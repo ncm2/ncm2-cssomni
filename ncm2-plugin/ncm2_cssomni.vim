@@ -5,5 +5,7 @@ call ncm2#register_source({'name' : 'css',
             \ 'mark': 'css',
             \ 'word_pattern': '[\w\-]+',
             \ 'complete_pattern': ':\s*',
-            \ 'on_complete': ['ncm2#omni#complete', 'csscomplete#CompleteCSS'],
+            \ 'on_complete': ['ncm2#on_complete#delay', 180,
+            \               'ncm2#on_complete#omni',
+            \               'csscomplete#CompleteCSS'],
             \ })
