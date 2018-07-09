@@ -1,7 +1,7 @@
 call ncm2#register_source({'name' : 'css',
             \ 'priority': 9, 
             \ 'subscope_enable': 1,
-            \ 'scope': ['css','scss'],
+            \ 'scope': ['css', 'scss', 'less'],
             \ 'mark': 'css',
             \ 'word_pattern': '[\w\-]+',
             \ 'complete_pattern': ':\s*',
